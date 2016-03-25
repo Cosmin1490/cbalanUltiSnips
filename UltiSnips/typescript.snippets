@@ -1,5 +1,17 @@
 priority -50
 
-snippet dummy "dummy snippet"
-dummy
+snippet aservi "Angular Typescript Service with new interface"
+
+export interface I$1 {
+	$0
+}
+
+export class ${1:Service Name} implements I$1 {
+	public static inject: string[] = [];
+
+	constructor() {
+		// nop
+	}
+}
+
 endsnippet
